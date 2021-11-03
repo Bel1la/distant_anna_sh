@@ -1,0 +1,39 @@
+.container{
+    width: 70vw;
+    margin: 50px auto;
+    font-size: smaller;
+
+
+}
+
+.tab-body,
+.tab-header_item{
+    border: 1px solid #3BD8D8;
+}
+.tab-body_item{
+    /* display: none; }
+   .tab-body_item.active{  можно убрать*/
+    border: 1px solid #3BD8D8;
+    min-height: 100px;
+    display: block;
+    padding: 10px;
+}
+.tab-header_item{
+    display: inline-block;
+    padding: 10px 20px;
+    min-width: 70px;
+
+    text-align: center;
+
+    border-bottom: transparent;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    cursor: pointer;
+}
+
+.tab-header_item.active{
+    margin-bottom: -1px;
+    color: white;
+    background-color: rgba(14,117,353,0.815);
+    border-bottom: 1px solid white;
+}
