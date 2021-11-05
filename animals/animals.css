@@ -1,0 +1,31 @@
+.animals{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+
+    width: 420px;
+    margin: 15px auto;
+}
+.animals>div{
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 1px solid darkblue;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.cells{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    width: 320px;
+    margin: 0 auto;
+}
+div{
+    height: 100px;
+    background-color: sandybrown;
+    border: 1px solid chocolate;
+}
+.good{
+    background-color: #6DD552;
+}
