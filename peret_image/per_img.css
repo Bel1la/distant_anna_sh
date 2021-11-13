@@ -1,0 +1,20 @@
+.bloks{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows:repeat(2,250px) ;
+    grid-gap: 15px;
+}
+.blok{
+    border: 2px solid rgb(223, 156, 79);
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.zone{
+    border: 2px solid rgb(92, 117, 230);
+    background-color: rgb(169, 236, 238);
+}
+.image{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
