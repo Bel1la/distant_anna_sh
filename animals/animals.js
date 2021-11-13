@@ -3,6 +3,7 @@
 let bloks=document.querySelectorAll('.anim');
 let zones=document.querySelectorAll(".cell")
 let backZones=document.querySelectorAll(".animals")
+let kolvo=document.querySelector(".kol_vo")
 bloks.forEach(blok=>{
     blok.addEventListener('dragstart',dragstart);
     blok.addEventListener('dragend', dragend);
@@ -45,21 +46,32 @@ function dragend(e){
 }
 
 function dragenter(e){
-    if(e.target.class=="cell"&&anim.dataset.target=="hish"){
-        e.target.classList.add('good');}
+    if(e.target.classList.value=='cell'&&anim.dataset.target=="hish"){
+        anim.classList.add('good');}
+        
 }
 function dragleave(e){
-    e.target.classList.remove('good');
+    anim.classList.remove('good');
 }
 function dragover(e){
     e.preventDefault();
+}
+function count(){
+    return document.querySelectorAll('.cell>img[data-target="hish"]').length;
 }
 function dragdrop(e){
     e.preventDefault();
     if(e.target.tagName !== "IMG"){
     e.target.append(anim);
     
-    if(anim.dataset.target=="hish"){
-        e.target.classList.add('good');}
+    if(anim.dataset.target=="hish"&&e.target.classList.value=='cell'){
+        anim.classList.add('good');
+    }
+
+    //console.log(anim.dataset.target,e.target.classList)
 }
+if(count()==document.querySelectorAll('img[data-target="hish"]').length)
+kolvo.textContent=`Вы нашли всех хищников`
+else{
+kolvo.textContent=`Количество хищников ${count()}`;}
 }
