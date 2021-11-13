@@ -1,0 +1,33 @@
+.fragments{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    width: 350px;
+    margin: 10px auto;
+}
+.fragments>div{
+    border: 1px solid grey;
+    background-color: rgb(228, 228, 228);
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.cellsPuzzle{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    width: 350px;
+    margin: 10px auto;
+}
+.cell{
+    border: 1px solid grey;
+    background-color: rgb(228, 228, 228);
+}
+.zone{
+    border: 1px solid rgb(28, 161, 99);
+    background-color: rgb(148, 231, 193);
+}
