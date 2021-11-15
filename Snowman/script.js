@@ -18,6 +18,7 @@ function moveDrop(e){
     
     dragItem.style.left =(e.pageX-x) + "px";
     dragItem.style.top =(e.pageY-y) + "px";
+    resetZIndex();
     
 }
 function moveDragOver(e){
@@ -25,5 +26,5 @@ function moveDragOver(e){
     
 }
 function resetZIndex(){
-    document.qaerySelectorAll('img').forEach(item=>item.style.zIndex=5);
+    document.querySelectorAll('img').forEach(item=>item.style.zIndex=5);
 }
