@@ -25,5 +25,5 @@ function moveDragOver(e){
     
 }
 function resetZIndex(){
-    dragItem.style.zIndex=5;
+    document.qaerySelectorAll('img').forEach(item=>item.style.zIndex=5);
 }
